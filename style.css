@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Sriracha&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* .container {
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+} */
+
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Sriracha', cursive;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+
+header .shopping img {
+    width: 30px;
+    position: absolute;
+}
+
+header .shopping span {
+    background: red;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 90%;
+    padding: 3px 10px;
+    width: 5px;
+    height: 20px;
+    margin: -10px;
+}
+
+header .profile {
+    width: 35px;
+    margin: 5px 70px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.list .item {
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+
+.list .item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.list .item .title {
+    font-weight: 600;
+}
+
+.list .item .price {
+    margin: 10px;
+}
+
+.list .item button {
+    background-color: #eedab5;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card {
+    left: calc(100% - 500px);
+}
+.active .container {
+   transform: translateX(-200px);
+}
+.card h1 {
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div {
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img {
+    width: 90%;
+}
+.listCard li button {
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+header .logo a {
+    font-size: 30px;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo a span {
+    color: orange;
+}
+
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a {
+    margin: 5px 20px;
+    font-size: 20px;
+    color: white;
+    padding: 10px 10px;
+
+    
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid #eedab5;
+}
+
+
+.googlemap {
+    width: 90%;
+}
+
+.map-wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 20px 20px rgba(0.8, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.map-wrapper h1 {
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.map-wrapper h2 {
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+
+/*CONTENT*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(96,76,76,.6), rgba(96,76,76, .6)),url("img/image1.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.content h2 {
+    font-size: 32px;
+    padding: 5px;
+    color: white;
+}
+
+.content p {
+    font-size: 22px;
+    color: white;
+}
+
+
+/* MENU */
+
+.menu {
+    background-color: black;
+    width: 100%;
+}
+
+.menu .menu-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h3{
+    color: #eedab5;
+    padding: 10px 30px;
+}
+
+.menu-header h4 {
+    color: #eedab5;
+    padding: 10px 30px;
+}
+
+.menu .menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0p;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.menu .menu-content .ice-melon, .ice-mixed, .ice-markisa, .ice-bubble, .ice-choco {
+    width: 250px;
+}
+
+.menu .menu-content .ice-melon .ice-melon-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .ice-mixed .ice-mixed-image img {
+    border-radius: 50%;
+}
+.menu .menu-content .ice-markisa .ice-markisa-image img {
+    border-radius: 50%;
+}
+.menu .menu-content .ice-bubble .ice-bubble-image img {
+    border-radius: 50%;
+}
+.menu .menu-content .ice-choco .ice-choco-image img {
+    border-radius: 50%;
+}
+
+.menu .menu-content .ice-melon-body, .ice-mixed-body , .ice-markisa-body , .ice-bubble-body , .ice-choco-body  {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu-content .ice-melon-body h2, .ice-mixed-body h2, .ice-markisa-body h2, .ice-bubble-body h2, .ice-choco-body h2 {
+    color: 	#eedab5;
+}
+
+.menu .menu-content .ice-melon-body label, .ice-mixed-body label, .ice-markisa-body label, .ice-bubble-body label, .ice-choco-body label {
+   margin-top: 10px;
+    color: 	white;
+}
